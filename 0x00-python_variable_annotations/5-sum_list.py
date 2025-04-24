@@ -3,8 +3,10 @@
 A module that provides a function that sums a list
 """
 
+from typing import List
 
-def sum_list(input_list: list[float]) -> float:
+
+def sum_list(input_list: List[float]) -> float:
     """
     Sums a list and return the results.
 
