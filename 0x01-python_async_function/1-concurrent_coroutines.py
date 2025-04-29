@@ -10,6 +10,9 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
+    """
+    A function that executes routines concurrently
+    """
     delays = []
     for _ in range(n):
         delays.append(asyncio.create_task(wait_random(max_delay)))
